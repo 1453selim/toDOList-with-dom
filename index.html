@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDO List Uygulaması</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">toDo List</h1>
+    <p class="pharagraph">Please enter the ithem and click add</p>
+    <p class="pharagraph">Your todo ithem will be listed</p>
+    <input type="text" id="todo_input" name="todo_input" value="selim" />
+    <button onclick="addIthem()">Add</button>
+    <ul id="toDoList">
+      <li class="todo_list_ithem" onclick="removeItem(this)">
+        clean your hand
+      </li>
+      <li class="todo_list_ithem" onclick="removeItem(this)">
+        clean your room
+      </li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>
